@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectPetScreen">
+
+    <!--Background Image-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/petvet_background"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <!--Pet Information Button-->
+    <!--Must change Pet 1 to the name in the class of of the pet (ex. Pet.getName())-->
+
+    <!--Select Pet Text-->
+
+    <Button
+        android:id="@+id/selectPetMainMenuButton"
+        android:layout_width="112dp"
+        android:layout_height="67dp"
+        android:alpha="0.5"
+        android:color="#660048FF"
+        android:text="Main Menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/selectPetPet1Button"
+        android:layout_width="409dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="60dp"
+        android:alpha="0.5"
+        android:color="#660048FF"
+        android:text="Pet 1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintTop_toBottomOf="@+id/SelectPetText"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/SelectPetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Pet"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Add Pet Button-->
+    <Button
+        android:id="@+id/selectPetAddPetButton"
+        android:layout_width="345dp"
+        android:layout_height="74dp"
+        android:text="Add Pet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Background Image-->
+    <ImageView
+        android:id="@+id/Background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/petvet_background"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <!--Pet Information Button-->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/appicon" />
+
+    <!--Track Behavior Button-->
+    <Button
+        android:id="@+id/mainSelectPetButton"
+        android:layout_width="409dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="76dp"
+        android:alpha="0.5"
+        android:color="#660048FF"
+        android:text="Pet Information"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Background" />
+
+    <Button
+        android:id="@+id/mainTrackBehaviorButton"
+        android:layout_width="409dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.5"
+        android:color="#660048FF"
+        android:text="Track Behaviors"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainSelectPetButton" />
+
+    <!--Search Conditions Button-->
+    <Button
+        android:id="@+id/mainSearchConditionButton"
+        android:layout_width="409dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.5"
+        android:color="#660048FF"
+        android:text="Search Conditions"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTrackBehaviorButton" />
+
+    <!--Email Vet Button-->
+    <Button
+        android:id="@+id/mainEmailVetButton"
+        android:layout_width="119dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:alpha="0.5"
+        android:color="#660048FF"
+        android:text="Email Vet"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainSearchConditionButton" />
+
+    <!--Call Vet Button-->
+    <Button
+        android:id="@+id/mainCallVetButton"
+        android:layout_width="119dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:alpha="0.5"
+        android:color="#660048FF"
+        android:text="Call Vet"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainSearchConditionButton" />
+
+    <!--Pet Information Button-->
+    <TextView
+        android:id="@+id/PetVetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vetilance V0.5.1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Background" />
+
+    <Button
+        android:id="@+id/VetAppButton"
+        android:layout_width="74dp"
+        android:layout_height="30dp"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

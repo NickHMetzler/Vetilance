@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <!--Species Spinner Values-->
+    <string-array name="Species">
+        <item>Canine</item>
+        <item>Feline</item>
+    </string-array>
+
+    <!--Behaviors Spinner Values-->
+    <string-array name="Behaviors">
+        <item>Choose Behavior</item>
+        <item>Wheezing</item>
+        <item>Vomiting</item>
+        <item>Diarrhea</item>
+        <item>Refusal of Food</item>
+        <item>Scratching</item>
+        <item>Shaking</item>
+        <item>Head Shaking</item>
+        <item>Loss of Appetite</item>
+        <item>Abnormal Stool</item>
+        <item>Lethargy</item>
+        <item>Excessive Salivation</item>
+        <item>Loss of Appetite</item>
+        <item>Excessive Urination</item>
+    </string-array>
+
+</resources>
